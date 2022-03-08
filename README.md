@@ -19,14 +19,14 @@ It is used to give the current temperature in Fahrenheit for a specific Zip Code
 
 ## Dependencies
  Modules:
- -Express
- -Body-parser
- -Cors
+  Express,
+  Body-parser,
+  Cors
 ## Examples Sample
  Valid US Zip codes:
- -35004
- -94040
- -30002
+  35004,
+  94040,
+  30002
 
 
 
