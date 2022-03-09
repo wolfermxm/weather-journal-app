@@ -1,6 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
 projectData = {};
-serverData = [];
 
 // Require Express to run server and routes
 const express=require('express');
@@ -41,8 +40,7 @@ function addWeather (req,res){
 
     }
     console.log(newEntry);
-    serverData.push(newEntry);
-    projectData=serverData;
+    projectData=newEntry;
     
 };
 
