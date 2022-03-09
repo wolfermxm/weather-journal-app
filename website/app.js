@@ -74,11 +74,10 @@ const updateUI = async () => {
   const request = await fetch('/all');
   try{
     const allData = await request.json();
-    // to get recent user input(Last index assigned)
-    const allDataLength= allData.length-1;
-    document.getElementById('date').innerHTML = allData[allDataLength].date;
-    document.getElementById('temp').innerHTML = allData[allDataLength].temperature;
-    document.getElementById('content').innerHTML = allData[allDataLength].feeling;
+    console.log(allData)
+    document.getElementById('date').innerHTML = allData.date;
+    document.getElementById('temp').innerHTML = Math.round(allData.temperature)+'degrees';
+    document.getElementById('content').innerHTML = allData.feeling;
 
   }catch(error){
     console.log("error", error);
